@@ -1,8 +1,8 @@
 export interface FlightSearchParams {
   originSkyId: string;
   destinationSkyId: string;
-  originEntityId: string;
-  destinationEntityId: string;
+  originEntityId?: string;
+  destinationEntityId?: string;
   date: string;
   returnDate?: string;
   cabinClass: "economy" | "premium_economy" | "business" | "first";
@@ -14,3 +14,12 @@ export interface FlightSearchParams {
   market?: string;
   countryCode?: string;
 }
+
+// export interface FlightSearchParams {
+//   originSkyId: string;
+//   destinationSkyId: string;
+//   date: string;
+//   returnDate?: string;
+//   adults?: number;
+//   cabinClass?: string;
+// }

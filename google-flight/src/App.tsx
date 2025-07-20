@@ -2,7 +2,6 @@ import React from "react";
 import { FlightProvider } from "./context/FlightContext";
 import SearchForm from "./components/SearchForm";
 import FlightResults from "./components/FlightResults";
-// import FlightFilters from './components/FlightFilters';
 import { useFlightContext } from "./context/FlightContext";
 import Header from "./components/Header";
 
@@ -23,9 +22,6 @@ const AppContent: React.FC = () => {
         {/* Results Section */}
         {searchResults && (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            {/* Filters Sidebar */}
-            <div className="lg:col-span-1">{/* <FlightFilters /> */}</div>
-
             {/* Flight Results */}
             <div className="lg:col-span-3">
               <FlightResults />

@@ -1,6 +1,8 @@
 import type { Airport } from "./Airport";
 
 export interface SearchFormData {
+  originEntityId: string;
+  destinationEntityId: string;
   tripType: "round-trip" | "one-way" | "multi-city";
   from: Airport | null;
   to: Airport | null;

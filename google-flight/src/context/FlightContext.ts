@@ -37,7 +37,9 @@ const initialState: FlightState = {
       .toISOString()
       .split("T")[0],
     passengers: { adults: 1, children: 0, infants: 0 },
-    cabinClass: "economy"
+    cabinClass: "economy",
+    originEntityId: "",
+    destinationEntityId: ""
   },
   searchResults: null,
   isLoading: false,

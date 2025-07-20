@@ -39,17 +39,6 @@ const FlightResults: React.FC = () => {
         <h2 className="text-2xl font-bold text-gray-900">
           {searchResults.context.totalResults} flights found
         </h2>
-        <div className="flex items-center space-x-4">
-          <span className="text-sm text-gray-600">Sort by:</span>
-          <select
-            aria-label="Sort By"
-            className="border border-gray-300 rounded px-3 py-1 text-sm"
-          >
-            <option value="price">Price</option>
-            <option value="duration">Duration</option>
-            <option value="departure">Departure time</option>
-          </select>
-        </div>
       </div>
 
       {searchResults.itineraries.map((flight) => (
