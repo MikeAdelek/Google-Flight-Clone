@@ -19,8 +19,7 @@ const SearchForm: React.FC = () => {
   const [searchStatus, setSearchStatus] = useState("");
   const [searchAttempts, setSearchAttempts] = useState(0);
 
-  //Form validation
-  // Form validation (regular function, not a hook)
+  // Form validation 
   const validateForm = (): string | null => {
     const { from, to, departDate, returnDate, tripType } = searchFormData;
 
